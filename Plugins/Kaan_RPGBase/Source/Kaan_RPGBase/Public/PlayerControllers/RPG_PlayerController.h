@@ -16,6 +16,9 @@
  */
 
 class UInputMappingContext;
+class UInputAction;
+
+struct FInputActionValue;
 
 UCLASS()
 class KAAN_RPGBASE_API ARPG_PlayerController : public APlayerController
@@ -35,5 +38,13 @@ private:
 
 	//InputAction variable to set from blueprint.
 	UPROPERTY(EditAnywhere, Category = Input)
-	TObjectPtr<UInputMappingContext> RPG_CharacterMoveInputAction2D;
+	TObjectPtr<UInputAction> RPG_CharacterMoveInputAction3D;
+
+	//InputAction variable to set from blueprint.
+	UPROPERTY(EditAnywhere, Category = Input)
+	TObjectPtr<UInputAction> RPG_CharacterTurnCameraAction;
+
+
+	void Move2D_AndJump(const FInputActionValue& InputActionValue);
+	void TurnCamera(const FInputActionValue& InputActionValue);
 };

@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Kaan_WeatherBase",
+	"Description": "Weather Base Functionality",
+	"Category": "Other",
+	"CreatedBy": "Kaan Samet Guler",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "Kaan_WeatherBase",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
